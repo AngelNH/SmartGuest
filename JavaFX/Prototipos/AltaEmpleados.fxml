@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="894.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" minWidth="-Infinity" prefHeight="618.0" prefWidth="894.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Dar de alta un empleado" textFill="#004079">
+               <font>
+                  <Font name="Microsoft JhengHei UI Light" size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <TextField prefHeight="30.0" prefWidth="168.0" text="Nombre(s)">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="146.0" text="Apellido Paterno">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="146.0" text="Apellido Materno">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <ChoiceBox prefHeight="28.0" prefWidth="104.0" style="-fx-background-color: white; -fx-border-color: #BBBBBB;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <TextField prefHeight="30.0" prefWidth="168.0" text="Teléfono">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="164.0" text="Móvil">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="247.0" text="Correo electrónico">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <TextField prefHeight="30.0" prefWidth="256.0" text="Calle">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="76.0" text="No">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="247.0" text="Colonia">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <TextField prefHeight="30.0" prefWidth="92.0" text="CP">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="145.0" text="Ciudad">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="151.0" text="Estado">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="178.0" text="Salario Quincenal">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <ChoiceBox prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: white; -fx-border-color: #CCCCCC;" />
+                  <Label text="||Cree un usuario:" textFill="#004079">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="30.0" prefWidth="152.0" text="Usuario">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField prefHeight="30.0" prefWidth="124.0" text="Contraseña">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <VBox spacing="5.0">
+                     <children>
+                        <JFXCheckBox checkedColor="#0072cd" text="Lunes" unCheckedColor="#004079">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox checkedColor="#0072cd" text="Martes" unCheckedColor="#004079">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox checkedColor="#0072cd" text="Miércoles" unCheckedColor="#004079">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox checkedColor="#0072cd" text="Jueves" unCheckedColor="#004079">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                     </children>
+                  </VBox>
+                  <VBox spacing="5.0">
+                     <children>
+                        <JFXCheckBox checkedColor="#0072cd" text="Viernes" unCheckedColor="#004079">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox checkedColor="#0072cd" text="Sábado" unCheckedColor="#004079">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox checkedColor="#0072cd" text="Domingo" unCheckedColor="#004079">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" spacing="5.0">
+                     <children>
+                        <Label text="Hora de entrada:">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                        <Label text="Hora de salida:">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <JFXTimePicker defaultColor="#0072cd" prefHeight="29.0" prefWidth="164.0">
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </JFXTimePicker>
+                        <JFXTimePicker defaultColor="#0072cd" prefHeight="29.0" prefWidth="164.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="74.0" prefWidth="894.0" spacing="5.0">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: #0072cd;" text="Finalizar" textFill="WHITE">
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="#004079" />
+                              <Stop color="#0072cd" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #0072cd;" text="Cancelar" textFill="WHITE">
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                           <stops>
+                              <Stop color="#004079" />
+                              <Stop color="#0072cd" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

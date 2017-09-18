@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemaView.ReservaViewController">
+   <center>
+      <AnchorPane style="-fx-background-color: white;">
+         <children>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <SplitPane dividerPositions="0.215962441314554" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="616.0" prefWidth="252.0">
+                           <opaqueInsets>
+                              <Insets right="1.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXButton layoutX="97.0" layoutY="18.0" prefHeight="77.0" prefWidth="378.0" style="-fx-background-color: #0072cd;" text="Menú" textFill="WHITE" AnchorPane.bottomAnchor="539.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="68.0" layoutY="78.0" prefHeight="62.0" prefWidth="273.0" style="-fx-background-color: white; -fx-border-color: #cccccc;" text="Empleados" AnchorPane.bottomAnchor="476.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets bottom="1.0" />
+                                 </opaqueInsets>
+                              </JFXButton>
+                              <JFXButton layoutY="206.0" prefHeight="62.0" prefWidth="273.0" style="-fx-background-color: white; -fx-border-color: #cccccc;" text="Calendario de eventos" AnchorPane.bottomAnchor="348.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="206.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </JFXButton>
+                              <JFXButton layoutY="270.0" onAction="#goReservaView" prefHeight="62.0" prefWidth="273.0" style="-fx-background-color: white; -fx-border-color: cccccc;" text="Reserva" AnchorPane.bottomAnchor="284.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="270.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="22.0" layoutY="142.0" prefHeight="62.0" prefWidth="273.0" style="-fx-background-color: white; -fx-border-color: cccccc;" text="Servicios/Productos" AnchorPane.bottomAnchor="412.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="142.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutY="343.0" prefHeight="62.0" prefWidth="273.0" style="-fx-background-color: white; -fx-border-color: cccccc;" text="Clientes/Huéspedes" AnchorPane.bottomAnchor="211.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="343.0">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <BorderPane>
+                           <center>
+                            <AnchorPane id="AnchorWindow" minHeight="0.0" minWidth="0.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <children>
+                                    <BorderPane fx:id="BorderDest" prefHeight="618.0" prefWidth="1001.0" />
+                                 </children>
+                              </AnchorPane>
+                           </center>
+                        </BorderPane>
+                    </items>
+                  </SplitPane>
+               </center>
+               <top>
+                  <AnchorPane prefHeight="97.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <MenuButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="9.0" layoutX="1054.0" layoutY="13.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="220.0" style="-fx-background-color: transparent;" textAlignment="RIGHT" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="1054.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="13.0">
+                          <items>
+                            <MenuItem mnemonicParsing="false" style="-fx-font-family: &quot;Microsoft JhengHei UI Light&quot;; -fx-font-size: 18;" text="Consultar mi perfil" />
+                            <MenuItem mnemonicParsing="false" style="-fx-fcont-family: &quot;Microsoft JhengHei UI Light&quot;; -fx-font-size: 18;" text="Cerrar Sesión" />
+                          </items>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <graphic>
+                              <JFXButton contentDisplay="RIGHT" minWidth="40.0" prefHeight="66.0" prefWidth="180.0" text="Usuario">
+                                 <font>
+                                    <Font name="Microsoft JhengHei UI Light" size="25.0" />
+                                 </font>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#004079" />
+                                          <Stop color="#0072cd" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                                 <graphic>
+                                    <ImageView nodeOrientation="RIGHT_TO_LEFT" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../OneDrive/Documentos/ITESO/5%20Semestre/PAE/Proyecto(Prototipos)/Proyecto-SmartGuest/21442040_2023087434383679_990539981_n.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </graphic>
+                        </MenuButton>
+                        <ImageView fitHeight="91.0" fitWidth="127.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../OneDrive/Documentos/ITESO/5%20Semestre/PAE/Proyecto(Prototipos)/Proyecto-SmartGuest/HiltonLogo.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton layoutX="853.0" layoutY="16.0" maxWidth="1075.0" minWidth="40.0" prefHeight="71.0" prefWidth="213.0" text="Notificar empleado" textFill="#a4a1a1" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="853.0" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="16.0">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="20.0" />
+                           </font>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#004079" />
+                                    <Stop color="#004079" offset="0.007662835249042145" />
+                                    <Stop color="#0072cd" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

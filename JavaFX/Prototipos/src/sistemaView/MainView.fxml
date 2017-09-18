@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemaView.MainViewController">
+   <center>
+      <AnchorPane>
+         <children>
+            <BorderPane prefHeight="720.0" prefWidth="1280.0">
+               <center>
+                  <SplitPane dividerPositions="0.7003129890453834" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="718.0" prefWidth="907.0">
+                           <effect>
+                              <ImageInput />
+                           </effect>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="90.0" layoutY="224.0" prefHeight="718.0" prefWidth="379.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="93.0" fitWidth="247.0">
+                                       <image>
+                                          <Image url="@../../../../OneDrive/Documentos/ITESO/5%20Semestre/PAE/Proyecto(Prototipos)/Proyecto-SmartGuest/SmartGuestLogo.png" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXTextField fx:id="txtUsuario" maxWidth="-Infinity" prefWidth="227.0" promptText="Usuario">
+                                       <font>
+                                          <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                                       </font>
+                                       <focusColor>
+                                          <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+                                             <stops>
+                                                <Stop color="#004079" />
+                                                <Stop color="#0072cd" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </focusColor>
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" top="30.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXPasswordField fx:id="txtContraseñas" maxWidth="-Infinity" prefHeight="29.0" prefWidth="227.0" promptText="Contraseña">
+                                       <VBox.margin>
+                                          <Insets bottom="30.0" top="15.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Microsoft JhengHei UI Light" size="18.0" />
+                                       </font>
+                                       <focusColor>
+                                          <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+                                             <stops>
+                                                <Stop color="#002b72" />
+                                                <Stop color="#0072cd" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </focusColor>
+                                    </JFXPasswordField>
+                                    <JFXButton fx:id="btnIniciar" buttonType="RAISED" onAction="#goUserView" style="-fx-background-color: #0072cd;" text="Iniciar Sesión" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                                       </font>
+                                       <ripplerFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                             <stops>
+                                                <Stop color="#004079" />
+                                                <Stop color="#0072cd" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </ripplerFill>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </JFXButton>
+                                    <ImageView fitHeight="27.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../OneDrive/Documentos/ITESO/5%20Semestre/PAE/Proyecto(Prototipos)/Proyecto-SmartGuest/EasyTechSolutionsLogo.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
